@@ -51,20 +51,6 @@ Context: Task
   * ^short = "Reference to a KT2ActivityDefinition"
   * ^definition = "Use this reference rather than the element `Task.instantiatesCanonical` to refer to the ActivityDefinition which is instantiated by this Task."
 
-Extension: KT2_ResourceOrigin
-Id: resource-origin
-Description: "Defines the author of the resource"
-Context: "Account | ActivityDefinition | AdverseEvent | AllergyIntolerance | Appointment | AppointmentResponse | AuditEvent | Basic | BiologicallyDerivedProduct | BodyStructure | CapabilityStatement | CarePlan | CareTeam | CatalogEntry | ChargeItem | ChargeItemDefinition | Claim | ClaimResponse | ClinicalImpression | CodeSystem | Communication | CommunicationRequest | CompartmentDefinition | Composition | ConceptMap | Condition | Consent | Contract | Coverage | CoverageEligibilityRequest | CoverageEligibilityResponse | DetectedIssue | Device | DeviceDefinition | DeviceMetric | DeviceRequest | DeviceUseStatement | DiagnosticReport | DocumentManifest | DocumentReference | EffectEvidenceSynthesis | Encounter | Endpoint | EnrollmentRequest | EnrollmentResponse | EpisodeOfCare | EventDefinition | Evidence | EvidenceVariable | ExampleScenario | ExplanationOfBenefit | FamilyMemberHistory | Flag | Goal | GraphDefinition | Group | GuidanceResponse | HealthcareService | ImagingStudy | Immunization | ImmunizationEvaluation | ImmunizationRecommendation | ImplementationGuide | InsurancePlan | Invoice | Library | Linkage | List | Location | Measure | MeasureReport | Media | Medication | MedicationAdministration | MedicationDispense | MedicationKnowledge | MedicationRequest | MedicationStatement | MedicinalProduct | MedicinalProductAuthorization | MedicinalProductContraindication | MedicinalProductIndication | MedicinalProductIngredient | MedicinalProductInteraction | MedicinalProductManufactured | MedicinalProductPackaged | MedicinalProductPharmaceutical | MedicinalProductUndesirableEffect | MessageDefinition | MessageHeader | MolecularSequence | NamingSystem | NutritionOrder | Observation | ObservationDefinition | OperationDefinition | OperationOutcome | Organization | OrganizationAffiliation | Patient | PaymentNotice | PaymentReconciliation | Person | PlanDefinition | Practitioner | PractitionerRole | Procedure | Provenance | Questionnaire | QuestionnaireResponse | RelatedPerson | RequestGroup | ResearchDefinition | ResearchElementDefinition | ResearchStudy | ResearchSubject | RiskAssessment | RiskEvidenceSynthesis | Schedule | SearchParameter | ServiceRequest | Slot | Specimen | SpecimenDefinition | StructureDefinition | StructureMap | Subscription | Substance | SubstanceNucleicAcid | SubstancePolymer | SubstanceProtein | SubstanceReferenceInformation | SubstanceSourceMaterial | SubstanceSpecification | SupplyDelivery | SupplyRequest | Task | TerminologyCapabilities | TestReport | TestScript | ValueSet | VerificationResult | VisionPrescription"
-* ^url = "http://koppeltaal.nl/fhir/StructureDefinition/resource-origin"
-* ^version = "0.8.0"
-* ^status = #draft
-* ^date = "2023-01-24"
-* insert ContactAndPublisher
-* . ..1
-* . ^definition = "Defines the author of the resource."
-* . ^comment = "Part of the authorisation model. Upon creation of the resource this extension is set to the device that created it."
-* value[x] only Reference(KT2_Device)
-
 ValueSet: KoppeltaalTaskCode_VS
 Id: koppeltaal-task-code
 Title: "Koppeltaal Task Code"
@@ -82,3 +68,20 @@ Description: "ValueSet for Task.code"
 * include codes from system KoppeltaalTaskCode
 * include codes from system http://hl7.org/fhir/CodeSystem/task-code
 
+CodeSystem: KoppeltaalTaskCode
+Id: koppeltaal-task-code
+Title: "Koppeltaal Task Code"
+Description: "Type of Task.code specifically used in Koppeltaal"
+* ^status = #active
+* ^content = #complete
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/CodeSystem"
+* ^date = 2024-07-15T12:00:00+02:00
+* insert ContactAndPublisher
+* ^url = "http://vzvz.nl/fhir/CodeSystem/koppeltaal-task-code"
+* ^identifier.use = #official
+* ^identifier.value = "http://vzvz.nl/fhir/CodeSystem/koppeltaal-task-code"
+* ^version = "2024-07-15"
+* ^experimental = false
+* ^caseSensitive = true
+* ^count = 1
+* #view "This task can be viewed"
