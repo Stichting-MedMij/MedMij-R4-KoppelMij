@@ -2,10 +2,17 @@ Profile: MedMij_Task
 Parent: Task
 Id: Koppelmij-Task
 Description: "The (FHIR) Task (resource) describes an eHealth task, that is, an eHealth activity assigned to a patient."
+* insert DefaultNarrative
 * ^status = #draft
-* insert ContactAndPublisher
+* insert PublisherAndContact
+^purpose = ""
+* insert Copyright
+* . 
+  * ^short = "Task"
+  * ^alias = "Task"
 * insert Origin
-* . ^definition = "An eHealth activity assigned to a patient."
+* . 
+^definition = "An eHealth activity assigned to a patient."
 * extension contains
     KT2_Instantiates named instantiates 0..*
 * extension[instantiates] ^short = "Reference to ActivityDefinition"
