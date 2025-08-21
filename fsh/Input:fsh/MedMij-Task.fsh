@@ -1,10 +1,8 @@
-Profile: KT2_Task
+Profile: MedMij_Task
 Parent: Task
-Id: KT2Task
+Id: Koppelmij-Task
 Description: "The (FHIR) Task (resource) describes an eHealth task, that is, an eHealth activity assigned to a patient."
-* ^version = "0.8.1"
 * ^status = #draft
-* ^date = "2023-01-24"
 * insert ContactAndPublisher
 * insert Origin
 * . ^definition = "An eHealth activity assigned to a patient."
