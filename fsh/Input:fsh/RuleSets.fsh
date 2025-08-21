@@ -31,3 +31,25 @@ RuleSet: Copyright
 RuleSet: DefaultNarrative
 * ^text.status = #empty
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+
+RuleSet: ContactAndPublisher
+* ^publisher = "VZVZ"
+* ^contact.name = "VZVZ"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "standaardisatie@vzvz.nl"
+* ^contact.telecom.use = #work
+* ^copyright = "VZVZ"
+* ^jurisdiction = urn:iso:std:iso:3166#NL "Netherlands" 
+* ^language = urn:ietf:bcp:47#nl-NL
+
+RuleSet: NLlang
+* language = urn:ietf:bcp:47#nl-NL
+
+RuleSet: ContactAndPublisherInstance
+* publisher = "VZVZ"
+* contact.name = "VZVZ"
+* contact.telecom.system = #email
+* contact.telecom.value = "standaardisatie@vzvz.nl"
+* contact.telecom.use = #work
+* jurisdiction = urn:iso:std:iso:3166#NL "Netherlands" 
+* language = urn:ietf:bcp:47#nl-NL
