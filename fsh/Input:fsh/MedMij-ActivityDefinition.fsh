@@ -1,15 +1,16 @@
-Profile: KoppelMij-ActivityDefinition
+Profile: MedMij-ActivityDefinition
 Parent: ActivityDefinition
-Id: KoppelMij-ActivityDefinition
+Id: MedMij-ActivityDefinition
 Description: "The (FHIR) ActivityDefinition (resource) describes an eHealth activity that is available for assignment to a patient. When assigning an eHealth activity to a patient, an eHealth Task is created, in which sub-activities are included as contained resources that refer to the main task via Task.partOf."
 * ^status = #draft
 * insert PublisherAndContact
-^purpose = ""
 * . ^short = "Description of an eHealth activity"
 * . ^comment = "The (FHIR) ActivityDefinition describes an eHealth activity available to assign to a patient. The assignment of an eHealth activity to a patient creates an eHealth Task (Task resource). This task can contain sub activities as contained resources which refer to the main task using the Task.partOf element."
 * insert Origin
+* insert Copyright
 * . 
-^definition = ""
+  * ^short = "ActivityDefnition"
+  * ^alias = "ActivityDefinition"
 * extension contains
     KT2_EndpointExtension named endpoint 1..* and
     KT2_PublisherId named publisherId 0..*
@@ -37,7 +38,7 @@ Context: ActivityDefinition
 * ^status = #draft
 * ^date = "2023-01-24"
 * insert ContactAndPublisher
-* value[x] only Reference(KT2_Endpoint)
+* value[x] only Reference(MedMij-Endpoint)
 
 Extension: KT2_PublisherId
 Id: KT2PublisherId

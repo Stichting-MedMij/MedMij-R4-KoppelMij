@@ -5,7 +5,7 @@ Description: "The (FHIR) Task (resource) describes an eHealth task, that is, an 
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-^purpose = ""
+^purpose = "KoppelMij allows a patient, from the portal or from a personal health environment (PGO), to use a module (from a third party) at the instruction of the healthcare provider (for example, to complete a questionnaire)."
 * insert Copyright
 * . 
   * ^short = "Task"
@@ -16,7 +16,7 @@ Description: "The (FHIR) Task (resource) describes an eHealth task, that is, an 
 * extension contains
     KT2_Instantiates named instantiates 0..*
 * extension[instantiates] ^short = "Reference to ActivityDefinition"
-  * ^definition = "Reference to the ActivityDefinition, which conforms to the KT2_ActivityDefinition profile."
+  * ^definition = "Reference to the ActivityDefinition, which conforms to the MedMij ActivityDefinition profile."
   * ^comment = "Use this extension to refer to the ActivityDefinition it instantiates."
   * ^isModifier = false
 * partOf only Reference(MedMij-Task)
@@ -47,8 +47,8 @@ Context: Task
 * ^status = #draft
 * insert ContactAndPublisher
 * value[x] 1..
-* value[x] only Reference(KT2_ActivityDefinition)
-  * ^short = "Reference to a KT2ActivityDefinition"
+* value[x] only Reference(MedMij-ActivityDefinition)
+  * ^short = "Reference to a MedMij ActivityDefinition"
   * ^definition = "Use this reference rather than the element `Task.instantiatesCanonical` to refer to the ActivityDefinition which is instantiated by this Task."
 
 ValueSet: KoppeltaalTaskCode_VS
