@@ -136,9 +136,9 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Huisarts, apotheekhoudend<br/>Zorgverlener: Haard, de<br/>Organisatie: Huisartsenpraktijk </div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Huisarts, apotheekhoudend<br/>Zorgverlener: Haard, de<br/>Organisatie: Huisartsenpraktijk Medrie</div>"
 * practitioner = Reference(KoppelMij-Practitioner-De-Haard) "A. de Haard"
-* organization = Reference(KoppelMij-Organization-Huisartsenpraktijk-) "Huisartstenpraktijk "
+* organization = Reference(KoppelMij-Organization-Huisartsenpraktijk-Medrie) "Huisartstenpraktijk Medrie"
 * specialty
   * coding = urn:oid:2.16.840.1.113883.2.4.6.7#0110 "Huisarts, apotheekhoudend"
 
@@ -167,27 +167,17 @@ Usage: #example
   * system = #email
   * value = "dehaard@huisarts.nl"
   * use = #work
-* address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
-  * use = #work
-  * line = "Simon Smitweg 1"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Simon Smitweg"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
-  * city = "Leiderdorp"
-  * postalCode = "2353 GA"
-  * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
-Instance: KoppelMij-Organization-Huisartsenpraktijk-
+Instance: KoppelMij-Organization-Huisartsenpraktijk-Medrie
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Huisartsenpraktijk <br/>AGB-code: 12095095<br/>Telefoon: +31653603740<br/>E-mail: huisartsenpraktijk-dehaard@huisarts.nl<br/>Adres: Herculeslaan 1, 3584 AB Utrecht</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Huisartsenpraktijk <br/>AGB-code: 01010235<br/>Telefoon: +31653603740<br/>E-mail: huisartsenpraktijk-dehaard@huisarts.nl<br/>Adres: Dr. Klinkertweg 18, 8004 DB Zwolle</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/agb-z"
-  * value = "12095095"
-* name = "Huisartsenpraktijk"
+  * value = "01010235"
+* name = "Ondersteuning Huisartsenpraktijk Medrie Bv"
 * telecom[0]
   * system = #phone
   * value = "+31653603740"
@@ -199,8 +189,8 @@ Usage: #example
 * address
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
   * use = #work
-  * line = "Herculeslaan 1"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Herculeslaan"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
-  * city = "Utrecht"
-  * postalCode = "3584 AB"
+  * line = "Dr. Klinkertweg 18"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Dr. Klinkertweg"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "18"
+  * city = "Zwolle"
+  * postalCode = "8004 DB"
