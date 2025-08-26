@@ -9,4 +9,4 @@ Context: ActivityDefinition
 * ^status = #draft
 * ^date = "2023-01-24"
 * insert ContactAndPublisher
-* value[x] only Reference(KT2_Endpoint)
+* value[x] only Reference(MedMij-Endpoint)

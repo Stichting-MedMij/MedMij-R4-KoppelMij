@@ -6,6 +6,6 @@ Context: Task
 * ^status = #draft
 * insert ContactAndPublisher
 * value[x] 1..
-* value[x] only Reference(KT2_ActivityDefinition)
+* value[x] only Reference(MedMij-ActivityDefinition)
   * ^short = "Reference to a KT2ActivityDefinition"
   * ^definition = "Use this reference rather than the element `Task.instantiatesCanonical` to refer to the ActivityDefinition which is instantiated by this Task."
