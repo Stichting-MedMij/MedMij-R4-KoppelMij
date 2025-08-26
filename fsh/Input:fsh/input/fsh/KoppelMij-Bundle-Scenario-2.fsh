@@ -54,7 +54,7 @@ Usage: #example
   * div = "<div xmlns='http://www.w3.org/1999/xhtml' xml:lang='nl-NL' lang='nl-NL'>Example of an Endpoint as used in KoppelMij</div>"
 * insert NLlang
 * status = #active
-* managingOrganization = Reference(KoppelMij-Organization-)
+* managingOrganization = Reference(KoppelMij-Organization-GGZ)
 * payloadType = $endpoint-payload-type#any
 Adress = "https://module.test.5im.nl/web/api/smartonfhir/launch"
 
@@ -150,7 +150,7 @@ Usage: #example
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
-Instance: KoppelMij-Organization-GGZ-
+Instance: KoppelMij-Organization-GGZ
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization
 Usage: #example
 * text
