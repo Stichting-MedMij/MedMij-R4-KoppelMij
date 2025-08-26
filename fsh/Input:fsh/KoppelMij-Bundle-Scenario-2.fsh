@@ -90,7 +90,7 @@ Usage: #example
   * use = #home
 * gender = #male
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender#M "Male"
-* birthDate = "1961-08-02"
+* birthDate = "1972-09-20"
 * deceasedBoolean = false
 * address
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "primary home"
@@ -109,36 +109,35 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Huisarts, apotheekhoudend<br/>Zorgverlener: Haard, de<br/>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
-* practitioner = Reference(KoppelMij-Practitioner-De-Haard) "A. de Haard"
-* organization = Reference(KoppelMij-Organization-) "Huisartstenpraktijk "
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Psychiater<br/>Zorgverlener: Vonk<br/>Organisatie: GGZ</div>"
+* practitioner = Reference(KoppelMij-Practitioner-Vonk) "M. Vonk"
+* organization = Reference(KoppelMij-Organization-GGZ) "GGZ "
 * specialty
-  * coding = urn:oid:2.16.840.1.113883.2.4.6.7#0110 "Huisarts, apotheekhoudend"
+  * coding = urn:oid:2.16.840.1.113883.2.4.6.7#0329 "Psychiatrie"
 
-Instance: KoppelMij-Practitioner-De-Haard
+Instance: KoppelMij-Practitioner-Vonk
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: A. de Haard<br/>BIG-nummer: 12070100<br/>Telefoon: +31612345600<br/>E-mail: dehaard@huisarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: M. Vonk<br/>BIG-nummer: 12082100<br/>Telefoon: +31612555600<br/>E-mail: vonk@ggz.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/big"
-  * value = "12070100"
+  * value = "12082100"
 * name
   * use = #official
-  * text = "A. de Haard"
-  * family = "de Haard"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-prefix].valueString = "de"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Haard"
-  * given[0] = "A."
+  * text = "M. Vonk"
+  * family = "Vonk"
+    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Vonk"
+  * given[0] = "M."
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
 * telecom[0]
   * system = #phone
-  * value = "+31612345600"
+  * value = "+31612555600"
   * use = #work
 * telecom[1]
   * system = #email
-  * value = "dehaard@huisarts.nl"
+  * value = "vonk@ggz.nl"
   * use = #work
 * address
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
@@ -151,23 +150,23 @@ Usage: #example
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
-Instance: KoppelMij-Organization-Huisartsenpraktijk-
+Instance: KoppelMij-Organization-GGZ-
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Huisartsenpraktijk <br/>AGB-code: 12095095<br/>Telefoon: +31653603740<br/>E-mail: huisartsenpraktijk-dehaard@huisarts.nl<br/>Adres: Herculeslaan 1, 3584 AB Utrecht</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: GGZ <br/>AGB-code: 12095095<br/>Telefoon: +31653603740<br/>E-mail: huisartsenpraktijk-dehaard@huisarts.nl<br/>Adres: Herculeslaan 1, 3584 AB Utrecht</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/agb-z"
   * value = "12095095"
-* name = "Huisartsenpraktijk"
+* name = "GGZ"
 * telecom[0]
   * system = #phone
   * value = "+31653603740"
   * use = #work
 * telecom[1]
   * system = #email
-  * value = "huisartsenpraktijk-dehaard@huisarts.nl"
+  * value = "ggz@ggz.nl"
   * use = #work
 * address
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
