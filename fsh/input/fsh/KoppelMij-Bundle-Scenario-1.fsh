@@ -1,7 +1,7 @@
 // Bundle with FHIR test instances in FSH format for KoppelMij test scenario 1
 
 Instance: KoppelMij-Task-Questionnaire-Van-Duinen
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/MedMij-task
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/MedMij-Task
 Usage: #example
 * text
   * status = #generated
@@ -28,7 +28,7 @@ Usage: #example
 * owner = Reference(KoppelMij-Patient-Van-Duinen) "Tom van Duinen"
 
 Instance: KoppelMij-Task-Update-Questionnaire-Van-Duinen
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/MedMij-task
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/MedMij-Task
 Usage: #example
 * text
   * status = #generated
