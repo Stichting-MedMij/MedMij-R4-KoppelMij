@@ -46,7 +46,7 @@ Usage: #example
 * status = #active
 * description = "Vul deze vragenlijst voorafgaand aan de CGT-sessie in"
 
-Instance: KoppelMij-Endpoint-Vragenlijst-Module
+Instance: KoppelMij-Endpoint-Vragenlijst-Angststoornis
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/MedMij-Endpoint
 Usage: #example
 * text
