@@ -1,11 +1,11 @@
-Profile: KoppelMij-Task
+Profile: KoppelMijTask
 Parent: Task
-Id: Koppelmij-Task
+Id: MedMij-Task
 Description: "The (FHIR) Task (resource) describes an eHealth task, that is, an eHealth activity assigned to a patient."
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-^purpose = "KoppelMij allows a patient, from the portal or from a personal health environment (PGO), to use a module (from a third party) at the instruction of the healthcare provider (for example, to complete a questionnaire)."
+* ^purpose = "KoppelMij allows a patient, from the portal or from a personal health environment (PGO), to use a module (from a third party) at the instruction of the healthcare provider (for example, to complete a questionnaire)."
 * insert Copyright
 * . 
   * ^short = "Task"

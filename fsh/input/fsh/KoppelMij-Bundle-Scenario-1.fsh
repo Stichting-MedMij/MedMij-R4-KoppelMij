@@ -82,12 +82,9 @@ Usage: #example
 * insert NLlang
 * status = #active
 * connectionType = $koppeltaal-endpoint-connection-type#hti-smart-on-fhir
-  * system = ""
-  * code = "other"
 * managingOrganization = Reference(KoppelMij-Organization-Huisartsenpraktijk-)
 * payloadType = $endpoint-payload-type#any
-* adress = "https://module.test.5im.nl/web/api/smartonfhir/launch"
-
+* address = "https://module.test.5im.nl/web/api/smartonfhir/launch"
 
 Instance: KoppelMij-Patient-Van-Duinen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient

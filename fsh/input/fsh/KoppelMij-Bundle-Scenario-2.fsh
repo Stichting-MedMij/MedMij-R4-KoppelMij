@@ -1,7 +1,7 @@
 // Bundle with FHIR test instances in FSH format for KoppelMij test scenario 2
 
 Instance: KoppelMij-Task-Questionnaire-De-Groot
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/MedMij-task
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/MedMij-Task
 Usage: #example
 * text
   * status = #generated
@@ -57,7 +57,7 @@ Usage: #example
 * connectionType = $koppeltaal-endpoint-connection-type#hti-smart-on-fhir
 * managingOrganization = Reference(KoppelMij-Organization-GGZ)
 * payloadType = $endpoint-payload-type#any
-* adress = "https://module.test.5im.nl/web/api/smartonfhir/launch"
+* address = "https://module.test.5im.nl/web/api/smartonfhir/launch"
 
 
 Instance: KoppelMij-Patient-De-Groot
@@ -105,7 +105,7 @@ Usage: #example
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
-Instance: KoppelMij-PractitionerRole-De-Haard
+Instance: KoppelMij-PractitionerRole-Vonk
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
 Usage: #example
 * text

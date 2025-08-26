@@ -1,4 +1,4 @@
-Profile: MedMij-Endpoint
+Profile: MedMijEndpoint
 Parent: Endpoint
 Id: MedMij-Endpoint
 Description: "The (FHIR) Endpoint (resource) is a representation of a technical contact point of an application that offers one or more eHealth services for a healthcare provider."
