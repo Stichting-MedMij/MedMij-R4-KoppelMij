@@ -81,9 +81,12 @@ Usage: #example
   * div = "<div xmlns='http://www.w3.org/1999/xhtml' xml:lang='nl-NL' lang='nl-NL'>Example of an Endpoint as used in KoppelMij</div>"
 * insert NLlang
 * status = #active
+* connectionType = $koppeltaal-endpoint-connection-type#hti-smart-on-fhir
+  * system = ""
+  * code = "other"
 * managingOrganization = Reference(KoppelMij-Organization-Huisartsenpraktijk-)
 * payloadType = $endpoint-payload-type#any
-Adress = "https://module.test.5im.nl/web/api/smartonfhir/launch"
+* adress = "https://module.test.5im.nl/web/api/smartonfhir/launch"
 
 
 Instance: KoppelMij-Patient-Van-Duinen
