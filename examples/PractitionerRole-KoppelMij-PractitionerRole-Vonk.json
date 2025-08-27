@@ -1,0 +1,32 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "KoppelMij-PractitionerRole-Vonk",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlenerrol: Psychiater<br/>Zorgverlener: Vonk<br/>Organisatie: GGZ</div>"
+  },
+  "practitioner": {
+    "reference": "Practitioner/KoppelMij-Practitioner-Vonk",
+    "display": "M. Vonk"
+  },
+  "organization": {
+    "reference": "Organization/KoppelMij-Organization-GGZ",
+    "display": "GGZ "
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "code": "0329",
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "display": "Psychiatrie"
+        }
+      ]
+    }
+  ]
+}

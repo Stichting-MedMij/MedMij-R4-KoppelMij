@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KoppeltaalTaskCode_ValueSet",
+  "id": "koppeltaal-task-code",
+  "title": "Koppeltaal Task Code",
+  "description": "ValueSet for Task.code",
+  "url": "http://vzvz.nl/fhir/ValueSet/koppeltaal-task-code",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "value": "http://vzvz.nl/fhir/ValueSet/koppeltaal-task-code"
+    }
+  ],
+  "experimental": false,
+  "date": "2024-07-15T12:00:00+02:00",
+  "publisher": "VZVZ",
+  "contact": [
+    {
+      "name": "VZVZ",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "standaardisatie@vzvz.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "VZVZ",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NL",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Netherlands"
+        }
+      ]
+    }
+  ],
+  "language": "nl-NL",
+  "compose": {
+    "include": [
+      {
+        "system": "http://vzvz.nl/fhir/CodeSystem/koppeltaal-task-code"
+      },
+      {
+        "system": "http://hl7.org/fhir/CodeSystem/task-code"
+      }
+    ]
+  }
+}
