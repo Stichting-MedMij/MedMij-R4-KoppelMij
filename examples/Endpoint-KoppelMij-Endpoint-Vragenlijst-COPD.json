@@ -1,0 +1,33 @@
+{
+  "resourceType": "Endpoint",
+  "id": "KoppelMij-Endpoint-Vragenlijst-COPD",
+  "meta": {
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/MedMij-Endpoint"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"nl-NL\" lang=\"nl-NL\">Example of an Endpoint as used in KoppelMij</div>"
+  },
+  "language": "nl-NL",
+  "status": "active",
+  "connectionType": {
+    "code": "hti-smart-on-fhir",
+    "system": "http://vzvz.nl/fhir/CodeSystem/koppeltaal-endpoint-connection-type"
+  },
+  "managingOrganization": {
+    "reference": "Organization/KoppelMij-Organization-Huisartsenpraktijk-Medrie"
+  },
+  "payloadType": [
+    {
+      "coding": [
+        {
+          "code": "any",
+          "system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type"
+        }
+      ]
+    }
+  ],
+  "address": "https://module.test.5im.nl/web/api/smartonfhir/launch"
+}

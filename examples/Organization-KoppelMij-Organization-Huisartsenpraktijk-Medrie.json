@@ -1,0 +1,70 @@
+{
+  "resourceType": "Organization",
+  "id": "KoppelMij-Organization-Huisartsenpraktijk-Medrie",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
+    ]
+  },
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "WP",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                "display": "Work Place"
+              }
+            ]
+          }
+        }
+      ],
+      "line": [
+        "Dr. Klinkertweg 18"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Dr. Klinkertweg"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "18"
+            }
+          ]
+        }
+      ],
+      "use": "work",
+      "city": "Zwolle",
+      "postalCode": "8004 DB"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Huisartsenpraktijk<br/>AGB-code: 01010235<br/>Telefoon: +31653603740<br/>E-mail: huisartsenpraktijk-dehaard@huisarts.nl<br/>Adres: Dr. Klinkertweg 18, 8004 DB Zwolle</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
+      "value": "01010235"
+    }
+  ],
+  "name": "Ondersteuning Huisartsenpraktijk Medrie Bv",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+31653603740",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "huisartsenpraktijk-dehaard@huisarts.nl",
+      "use": "work"
+    }
+  ]
+}
