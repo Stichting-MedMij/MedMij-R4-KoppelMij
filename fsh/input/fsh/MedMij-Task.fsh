@@ -91,9 +91,6 @@ CodeSystem: SmartOnFhirCodes
 Id: smart-codes
 Title: "SMART on FHIR terminology."
 Description: "Codes used in profiles related to SMART on FHIR."
-* text
-  * status = #generated
-  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/smart-app-launch/CodeSystem/smart-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">launch-app-ehr<a name=\"smart-codes-launch-app-ehr\"> </a></td><td>Launch application using the SMART EHR launch</td><td>The task suggest launching an application using the SMART on FHIR EHR launch.</td></tr><tr><td style=\"white-space:nowrap\">launch-app-standalone<a name=\"smart-codes-launch-app-standalone\"> </a></td><td>Launch application using the SMART standalone launch</td><td>The task suggest launching an application using the SMART on FHIR standalone launch.</td></tr><tr><td style=\"white-space:nowrap\">smartonfhir-application<a name=\"smart-codes-smartonfhir-application\"> </a></td><td>SMART on FHIR application URL.</td><td>The URL of a SMART on FHIR application.</td></tr><tr><td style=\"white-space:nowrap\">smartonfhir-appcontext<a name=\"smart-codes-smartonfhir-appcontext\"> </a></td><td>Application context related to this launch.</td><td>The application context (appContext) to be passed to the application after launch.</td></tr></table></div>"
 * ^url = "$SmartCodes"
 * ^version = "2.2.0"
 * ^name = "SmartOnFhirCodes"
@@ -102,6 +99,7 @@ Description: "Codes used in profiles related to SMART on FHIR."
 * ^date = "2024-04-30T19:24:31+00:00"
 * insert PublisherInternational
 * ^caseSensitive = true
+* ^description = "Codes used in profiles related to SMART on FHIR."
 * ^content = #complete
 * ^count = 4
 * #launch-app-ehr "Launch application using the SMART EHR launch"
