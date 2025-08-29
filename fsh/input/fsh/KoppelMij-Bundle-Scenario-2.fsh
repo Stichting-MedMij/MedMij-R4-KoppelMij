@@ -17,6 +17,7 @@ Usage: #example
 * status = #requested
 * intent = #order
 * priority = #routine
+* code = $SmartCodes#launch-app-standalone "Launch application using the SMART standalone launch"
 * description = "Invullen angststoornis vragenlijst t.b.v. CGT sessie"
 * for = Reference(KoppelMij-Patient-De-Groot) "Koos de Groot"
 * executionPeriod

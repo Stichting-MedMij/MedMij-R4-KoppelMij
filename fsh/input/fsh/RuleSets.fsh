@@ -53,3 +53,12 @@ RuleSet: ContactAndPublisherInstance
 * contact.telecom.use = #work
 * jurisdiction = urn:iso:std:iso:3166#NL "Netherlands" 
 * language = urn:ietf:bcp:47#nl-NL
+
+RuleSet: PublisherHL7International
+* publisher = "HL7 International / FHIR Infrastructure"
+* contact.name = "HL7 International / FHIR Infrastructure"
+* contact.telecom.system = #email
+* contact.telecom.value = "fhir@lists.HL7.org"
+* contact.telecom.system = #url
+* contact.telecom.value = "http://www.hl7.org/Special/committees/fiwg"
+* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" 

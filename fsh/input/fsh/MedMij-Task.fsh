@@ -20,7 +20,7 @@ Description: "The (FHIR) Task (resource) describes an eHealth task, that is, an 
   * ^comment = "Use this extension to refer to the ActivityDefinition it instantiates."
   * ^isModifier = false
 * partOf only Reference(MedMij-Task)
-* code from $koppeltaal-task-code-vs (preferred)
+* code from $koppeltaal-task-code-vs (extensible)
 * code ^comment = "See [Koppeltaal Implementation Guide](https://simplifier.net/guide/koppeltaal/Home/Profile-Specific-Notes/Task.page.md?version=current) for more information on the ValueSet"
 * for 1..
 * for only Reference(http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
@@ -67,6 +67,7 @@ Description: "ValueSet for Task.code"
 * insert ContactAndPublisher
 * include codes from system KoppeltaalTaskCode
 * include codes from system http://hl7.org/fhir/CodeSystem/task-code
+* include codes from system http://hl7.org/fhir/smart-app-launch/CodeSystem/smart-codes 
 
 CodeSystem: KoppeltaalTaskCode
 Id: koppeltaal-task-code
@@ -85,3 +86,36 @@ Description: "Type of Task.code specifically used in Koppeltaal"
 * ^caseSensitive = true
 * ^count = 1
 * #view "This task can be viewed"
+
+CodeSystem: SmartOnFhirCodes
+Id: smart-codes
+Title: "SMART on FHIR terminology."
+Description: "Codes used in profiles related to SMART on FHIR."
+* text
+  * status = #generated
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/smart-app-launch/CodeSystem/smart-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">launch-app-ehr<a name=\"smart-codes-launch-app-ehr\"> </a></td><td>Launch application using the SMART EHR launch</td><td>The task suggest launching an application using the SMART on FHIR EHR launch.</td></tr><tr><td style=\"white-space:nowrap\">launch-app-standalone<a name=\"smart-codes-launch-app-standalone\"> </a></td><td>Launch application using the SMART standalone launch</td><td>The task suggest launching an application using the SMART on FHIR standalone launch.</td></tr><tr><td style=\"white-space:nowrap\">smartonfhir-application<a name=\"smart-codes-smartonfhir-application\"> </a></td><td>SMART on FHIR application URL.</td><td>The URL of a SMART on FHIR application.</td></tr><tr><td style=\"white-space:nowrap\">smartonfhir-appcontext<a name=\"smart-codes-smartonfhir-appcontext\"> </a></td><td>Application context related to this launch.</td><td>The application context (appContext) to be passed to the application after launch.</td></tr></table></div>"
+* extension
+  * ^url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+  * ^valueCode = "fhir"
+* ^url = "$SmartCodes"
+* ^version = "2.2.0"
+* ^name = "SmartOnFhirCodes"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-04-30T19:24:31+00:00"
+* insert PublisherHL7International
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 4
+* #launch-app-ehr "Launch application using the SMART EHR launch"
+  * ^definition = "The task suggest launching an application using the SMART on FHIR EHR launch."
+* #launch-app-standalone "Launch application using the SMART standalone launch"
+  * ^definition = "The task suggest launching an application using the SMART on FHIR standalone launch."
+* #smartonfhir-application "SMART on FHIR application URL."
+  * ^definition = "The URL of a SMART on FHIR application."
+* #smartonfhir-appcontext "Application context related to this launch."
+  * ^definition = "The application context (appContext) to be passed to the application after launch."
+
+
+
+
