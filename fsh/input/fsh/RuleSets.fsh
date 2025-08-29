@@ -54,7 +54,7 @@ RuleSet: ContactAndPublisherInstance
 * jurisdiction = urn:iso:std:iso:3166#NL "Netherlands" 
 * language = urn:ietf:bcp:47#nl-NL
 
-RuleSet: PublisherHL7International
+RuleSet: PublisherInternational
 * publisher = "HL7 International / FHIR Infrastructure"
 * contact.name = "HL7 International / FHIR Infrastructure"
 * contact.telecom.system = #email
