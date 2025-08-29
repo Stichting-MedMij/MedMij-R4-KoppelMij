@@ -52,6 +52,9 @@
       },
       {
         "system": "http://hl7.org/fhir/CodeSystem/task-code"
+      },
+      {
+        "system": "http://hl7.org/fhir/smart-app-launch/CodeSystem/smart-codes"
       }
     ]
   }

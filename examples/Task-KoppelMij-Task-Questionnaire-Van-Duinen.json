@@ -29,6 +29,15 @@
   "status": "requested",
   "intent": "order",
   "priority": "routine",
+  "code": {
+    "coding": [
+      {
+        "code": "launch-app-standalone",
+        "system": "http://hl7.org/fhir/smart-app-launch/CodeSystem/smart-codes",
+        "display": "Launch application using the SMART standalone launch"
+      }
+    ]
+  },
   "description": "Invullen COPD vragenlijst",
   "for": {
     "reference": "Patient/KoppelMij-Patient-Van-Duinen",

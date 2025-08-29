@@ -105,7 +105,7 @@
         "path": "Task.code",
         "comment": "See [Koppeltaal Implementation Guide](https://simplifier.net/guide/koppeltaal/Home/Profile-Specific-Notes/Task.page.md?version=current) for more information on the ValueSet",
         "binding": {
-          "strength": "preferred",
+          "strength": "extensible",
           "valueSet": "http://vzvz.nl/fhir/ValueSet/koppeltaal-task-code"
         }
       },
