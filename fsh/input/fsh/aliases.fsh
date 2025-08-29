@@ -4,7 +4,7 @@ Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 
 // HL7 SMART App Launch
 Alias: $SmartCodes = http://hl7.org/fhir/smart-app-launch/CodeSystem/smart-codes
-Alias: $Juristriction = "http://unstats.un.org/unsd/methods/m49/m49.htm"
+Alias: $Juristriction = http://unstats.un.org/unsd/methods/m49/m49.htm
 
 // Alias: $audit-event-type = http://terminology.hl7.org/CodeSystem/audit-event-type
 Alias: $auditevent-type-vs = http://hl7.org/fhir/ValueSet/audit-event-type
