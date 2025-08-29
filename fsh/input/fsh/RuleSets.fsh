@@ -61,4 +61,4 @@ RuleSet: PublisherInternational
 * contact.telecom.value = "fhir@lists.HL7.org"
 * contact.telecom.system = #url
 * contact.telecom.value = "http://www.hl7.org/Special/committees/fiwg"
-* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.html#001 "World" 
+* jurisdiction = $Juristriction#001 "World" 
