@@ -19,6 +19,8 @@ Description: "The (FHIR) Task (resource) describes an eHealth task, that is, an 
   * ^definition = "Reference to the ActivityDefinition, which conforms to the MedMij ActivityDefinition profile."
   * ^comment = "Use this extension to refer to the ActivityDefinition it instantiates."
   * ^isModifier = false
+* instantiatesCanonical only Canonical(KT2_ActivityDefinition)
+  * ^comment = "As of 2023-11-02 this element is no longer used in Koppeltaal 2.0. Use the extension `instantiates` instead."
 * partOf only Reference(MedMij-Task)
 * code from $koppeltaal-task-code-vs (extensible)
 * code ^comment = "See [Koppeltaal Implementation Guide](https://simplifier.net/guide/koppeltaal/Home/Profile-Specific-Notes/Task.page.md?version=current) for more information on the ValueSet"
