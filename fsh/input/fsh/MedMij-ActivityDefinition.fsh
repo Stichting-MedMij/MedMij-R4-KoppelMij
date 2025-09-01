@@ -17,6 +17,8 @@ Description: "The (FHIR) ActivityDefinition (resource) describes an eHealth acti
 * extension[endpoint] ^short = "Endpoint to the service application"
   * ^definition = "Mandatory reference to the service application (endpoint) that provides the eHealth activity. Can be more than one endpoint."
 * extension[publisherId] ^isModifier = false
+* url 1..
+* title 1..
 * useContext
   * ^definition = "The context for the content of the eHealth activity"
   * ^comment = "E.g. the activity is targeted to a certain age group"
