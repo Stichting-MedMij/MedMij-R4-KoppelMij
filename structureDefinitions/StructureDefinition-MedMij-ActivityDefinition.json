@@ -99,6 +99,31 @@
         ]
       },
       {
+        "id": "ActivityDefinition.extension:clientId",
+        "path": "ActivityDefinition.extension",
+        "sliceName": "clientId",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://medmij.nl/fhir/StructureDefinition/client-id"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ActivityDefinition.url",
+        "path": "ActivityDefinition.url",
+        "min": 1
+      },
+      {
+        "id": "ActivityDefinition.title",
+        "path": "ActivityDefinition.title",
+        "min": 1
+      },
+      {
         "id": "ActivityDefinition.useContext",
         "path": "ActivityDefinition.useContext",
         "definition": "The context for the content of the eHealth activity",

@@ -89,6 +89,19 @@
         ]
       },
       {
+        "id": "Task.instantiatesCanonical",
+        "path": "Task.instantiatesCanonical",
+        "comment": "As of 2023-11-02 this element is no longer used in Koppeltaal 2.0. Use the extension `instantiates` instead.",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://medmij.nl/fhir/StructureDefinition/KT2ActivityDefinition"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Task.partOf",
         "path": "Task.partOf",
         "type": [
