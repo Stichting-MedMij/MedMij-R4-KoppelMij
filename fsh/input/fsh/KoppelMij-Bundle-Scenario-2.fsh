@@ -38,6 +38,7 @@ Usage: #example
 * extension[0]
   * url = "http://koppeltaal.nl/fhir/StructureDefinition/KT2EndpointExtension"
   * valueReference = Reference(KoppelMij-Endpoint-Vragenlijst-Angststoornis)
+* url = "https://example.nl/web/vragenlijst/1234567"
 * identifier
   * system = "http://{name}/content/id"
   * value = "cb2ca8b6-4d5f-480b-a8fe-4c574f1e38ae"

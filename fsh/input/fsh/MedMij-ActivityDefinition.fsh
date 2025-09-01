@@ -14,11 +14,11 @@ Description: "The (FHIR) ActivityDefinition (resource) describes an eHealth acti
 * extension contains
     KT2_EndpointExtension named endpoint 1..* and
     KT2_PublisherId named publisherId 0..* and
-    Medmij-ClientID named clientid 0..*
+    MedMijClientID named clientId 0..*
 * extension[endpoint] ^short = "Endpoint to the service application"
   * ^definition = "Mandatory reference to the service application (endpoint) that provides the eHealth activity. Can be more than one endpoint."
 * extension[publisherId] ^isModifier = false
-* extension[clientid] ^isModifier = false
+* extension[clientId] ^isModifier = false
 * url 1..
 * title 1..
 * useContext

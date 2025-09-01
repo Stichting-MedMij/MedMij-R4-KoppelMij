@@ -65,6 +65,7 @@ Usage: #example
 * extension[0]
   * url = "http://koppeltaal.nl/fhir/StructureDefinition/KT2EndpointExtension"
   * valueReference = Reference(KoppelMij-Endpoint-Vragenlijst-COPD)
+* url = "https://example.nl/web/vragenlijst/1234567"
 * identifier
   * system = "http://{name}/content/id"
   * value = "13fe98b3-70a0-4e39-9e6f-4a0a5c04d45c"
