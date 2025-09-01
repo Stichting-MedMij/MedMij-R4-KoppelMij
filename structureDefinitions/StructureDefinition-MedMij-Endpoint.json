@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MedMij-Endpoint",
+  "language": "nl-NL",
+  "url": "http://medmij.nl/fhir/StructureDefinition/MedMij-Endpoint",
+  "name": "MedMijEndpoint",
+  "status": "draft",
+  "publisher": "VZVZ",
+  "contact": [
+    {
+      "name": "VZVZ",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "standaardisatie@vzvz.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "The (FHIR) Endpoint (resource) is a representation of a technical contact point of an application that offers one or more eHealth services for a healthcare provider.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NL",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Netherlands"
+        }
+      ]
+    }
+  ],
+  "copyright": "VZVZ",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Endpoint",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Endpoint",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Endpoint.extension",
+        "path": "Endpoint.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Endpoint.extension:resource-origin",
+        "path": "Endpoint.extension",
+        "sliceName": "resource-origin",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://koppeltaal.nl/fhir/StructureDefinition/resource-origin"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Endpoint.connectionType",
+        "path": "Endpoint.connectionType",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://vzvz.nl/fhir/ValueSet/endpoint-connection-type"
+        }
+      },
+      {
+        "id": "Endpoint.managingOrganization",
+        "path": "Endpoint.managingOrganization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

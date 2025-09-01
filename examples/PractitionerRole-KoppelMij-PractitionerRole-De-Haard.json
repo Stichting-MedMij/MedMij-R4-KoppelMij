@@ -1,0 +1,32 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "KoppelMij-PractitionerRole-De-Haard",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlenerrol: Huisarts, apotheekhoudend<br/>Zorgverlener: Haard, de<br/>Organisatie: Huisartsenpraktijk Medrie</div>"
+  },
+  "practitioner": {
+    "reference": "Practitioner/KoppelMij-Practitioner-De-Haard",
+    "display": "A. de Haard"
+  },
+  "organization": {
+    "reference": "Organization/KoppelMij-Organization-Huisartsenpraktijk-Medrie",
+    "display": "Huisartstenpraktijk Medrie"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "code": "0110",
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "display": "Huisarts, apotheekhoudend"
+        }
+      ]
+    }
+  ]
+}
