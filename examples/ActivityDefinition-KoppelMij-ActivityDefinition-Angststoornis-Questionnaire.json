@@ -19,7 +19,7 @@
       }
     }
   ],
-  "url": "https://example.nl/web/vragenlijst/1234567",
+  "url": "https://example.com/activity1",
   "identifier": [
     {
       "system": "http://{name}/content/id",

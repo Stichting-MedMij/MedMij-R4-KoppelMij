@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "The correlation-id is an identifier related to the message and the workflow it's part of",
+  "description": "The correlation-id is an identifier related to the message and the workflow it is part of.",
   "jurisdiction": [
     {
       "coding": [
@@ -50,7 +50,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "The correlation-id is an identifier related to the message and the workflow it's part of",
+        "definition": "The correlation-id is an identifier related to the message and the workflow it is part of.",
         "max": "1"
       },
       {

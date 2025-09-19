@@ -39,4 +39,4 @@ RuleSet: PublisherAndContactHL7
 * ^contact.telecom.value = "fhir@lists.HL7.org"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/fiwg"
-* ^jurisdiction = $Juristriction#001 "World" 
+* ^jurisdiction = $Jurisdiction#001 "World" 

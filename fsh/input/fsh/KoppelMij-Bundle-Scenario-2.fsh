@@ -7,7 +7,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml' xml:lang='nl-NL' lang='nl-NL'>Example of a task</div>"
 * insert LanguageNL
-* extension[+]
+* extension[0]
   * url = $task-instantiates
   * valueReference = Reference(KoppelMij-ActivityDefinition-Angststoornis-Questionnaire)
     * type = "ActivityDefinition"

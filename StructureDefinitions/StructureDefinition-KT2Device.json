@@ -83,7 +83,7 @@
       {
         "id": "Device.status",
         "path": "Device.status",
-        "comment": "The default value should be set to 'active'.",
+        "comment": "The default value should be set to _active_.",
         "min": 1
       },
       {

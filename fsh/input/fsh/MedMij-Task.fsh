@@ -9,7 +9,7 @@ Description: "The (FHIR) Task (resource) describes an eHealth task, that is, an 
 * insert Copyright
 * .
   * ^short = "Task"
-  * ^alias = "Task"
+  * ^alias = "Taak"
 * insert Origin
 * .
 ^definition = "An eHealth activity assigned to a patient."
@@ -18,7 +18,6 @@ Description: "The (FHIR) Task (resource) describes an eHealth task, that is, an 
 * extension[instantiates] ^short = "Reference to ActivityDefinition"
   * ^definition = "Reference to the ActivityDefinition, which conforms to the MedMij ActivityDefinition profile."
   * ^comment = "Use this extension to refer to the ActivityDefinition it instantiates."
-  * ^isModifier = false
 * instantiatesCanonical only Canonical(MedMij-ActivityDefinition)
   * ^comment = "As of 2023-11-02 this element is no longer used in Koppeltaal 2.0. Use the extension `instantiates` instead."
 * partOf only Reference(MedMij-Task)
@@ -112,7 +111,3 @@ Description: "Codes used in profiles related to SMART on FHIR."
   * ^definition = "The URL of a SMART on FHIR application."
 * #smartonfhir-appcontext "Application context related to this launch."
   * ^definition = "The application context (appContext) to be passed to the application after launch."
-
-
-
-

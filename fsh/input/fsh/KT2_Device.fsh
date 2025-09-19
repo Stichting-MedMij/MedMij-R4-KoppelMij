@@ -14,7 +14,7 @@ Description: "The (FHIR) Device (resource) is a representation of an application
 * identifier 1..
   * system = "http://vzvz.nl/fhir/NamingSystem/koppeltaal-client-id" (exactly)
 * status 1..
-  * ^comment = "The default value should be set to 'active'."
+  * ^comment = "The default value should be set to _active_."
 * statusReason ..0
   * ^definition = "Reason for the status of the Device availability."
 * deviceName 1..

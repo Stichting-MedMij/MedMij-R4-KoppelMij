@@ -38,7 +38,7 @@
         "short": "Task",
         "definition": "An eHealth activity assigned to a patient.",
         "alias": [
-          "Task"
+          "Taak"
         ]
       },
       {
@@ -96,7 +96,7 @@
           {
             "code": "canonical",
             "targetProfile": [
-              "http://medmij.nl/fhir/StructureDefinition/KT2ActivityDefinition"
+              "http://medmij.nl/fhir/StructureDefinition/MedMij-ActivityDefinition"
             ]
           }
         ]
