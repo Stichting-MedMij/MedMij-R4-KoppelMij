@@ -1,0 +1,119 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "KT2Device",
+  "language": "nl-NL",
+  "url": "http://medmij.nl/fhir/StructureDefinition/KT2Device",
+  "version": "0.8.1",
+  "name": "KT2_Device",
+  "status": "draft",
+  "date": "2023-02-07",
+  "publisher": "VZVZ",
+  "contact": [
+    {
+      "name": "VZVZ",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "standaardisatie@vzvz.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "The (FHIR) Device (resource) is a representation of an application that is used in the provision of healthcare without being substantially changed through that activity. The device may be a module, portal or eHealth app.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NL",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Netherlands"
+        }
+      ]
+    }
+  ],
+  "copyright": "VZVZ",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Device",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device.extension",
+        "path": "Device.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Device.extension:resource-origin",
+        "path": "Device.extension",
+        "sliceName": "resource-origin",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://koppeltaal.nl/fhir/StructureDefinition/resource-origin"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Device.identifier",
+        "path": "Device.identifier",
+        "min": 1
+      },
+      {
+        "id": "Device.identifier.system",
+        "path": "Device.identifier.system",
+        "fixedUri": "http://vzvz.nl/fhir/NamingSystem/koppeltaal-client-id"
+      },
+      {
+        "id": "Device.status",
+        "path": "Device.status",
+        "comment": "The default value should be set to _active_.",
+        "min": 1
+      },
+      {
+        "id": "Device.statusReason",
+        "path": "Device.statusReason",
+        "definition": "Reason for the status of the Device availability.",
+        "max": "0"
+      },
+      {
+        "id": "Device.deviceName",
+        "path": "Device.deviceName",
+        "min": 1
+      },
+      {
+        "id": "Device.deviceName.type",
+        "path": "Device.deviceName.type",
+        "fixedCode": "user-friendly-name"
+      },
+      {
+        "id": "Device.owner",
+        "path": "Device.owner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

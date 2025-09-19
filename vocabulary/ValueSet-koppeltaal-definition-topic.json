@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KoppeltaalDefinitionTopic_VS",
+  "id": "koppeltaal-definition-topic",
+  "title": "Koppeltaal Definition Topic",
+  "description": "High-level categorization of the definition, used for indicating special patient initialised activities",
+  "version": "0.9.1",
+  "url": "http://vzvz.nl/fhir/ValueSet/koppeltaal-definition-topic",
+  "meta": {
+    "lastUpdated": "2024-06-18T00:00:00+02:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "value": "http://vzvz.nl/fhir/ValueSet/koppeltaal-definition-topic"
+    }
+  ],
+  "experimental": false,
+  "date": "2024-06-18T00:00:00+02:00",
+  "publisher": "VZVZ",
+  "contact": [
+    {
+      "name": "VZVZ",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "standaardisatie@vzvz.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "VZVZ",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NL",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Netherlands"
+        }
+      ]
+    }
+  ],
+  "language": "nl-NL",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/definition-topic"
+      },
+      {
+        "system": "http://vzvz.nl/fhir/CodeSystem/koppeltaal-definition-topic"
+      }
+    ]
+  }
+}

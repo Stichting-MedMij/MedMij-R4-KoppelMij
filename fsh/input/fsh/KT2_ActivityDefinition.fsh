@@ -1,20 +1,19 @@
 Profile: KT2_ActivityDefinition
 Parent: ActivityDefinition
 Id: KT2ActivityDefinition
-Description: "The (FHIR) ActivityDefinition (resource) describes an eHealth activity that is available for assignment to a patient. When assigning an eHealth activity to a patient, an eHealth Task is created, in which sub-activities are included as contained resources that refer to the main task via Task.partOf."
+Description: "The (FHIR) ActivityDefinition (resource) describes an eHealth activity that is available for assignment to a patient. When assigning an eHealth activity to a patient, an eHealth Task is created, in which sub-activities are included as contained resources that refer to the main task via `Task.partOf`."
 * ^version = "0.9.0"
 * ^status = #draft
 * ^date = "2023-01-24"
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * . ^short = "Description of an eHealth activity"
-* . ^comment = "The (FHIR) ActivityDefinition describes an eHealth activity available to assign to a patient. The assignment of an eHealth activity to a patient creates an eHealth Task (Task resource). This task can contain sub activities as contained resources which refer to the main task using the Task.partOf element."
+* . ^comment = "The (FHIR) ActivityDefinition describes an eHealth activity available to assign to a patient. The assignment of an eHealth activity to a patient creates an eHealth Task (Task resource). This task can contain sub activities as contained resources which refer to the main task using the `Task.partOf` element."
 * insert Origin
 * extension contains
     KT2_EndpointExtension named endpoint 1..* and
     KT2_PublisherId named publisherId 0..*
 * extension[endpoint] ^short = "Endpoint to the service application"
   * ^definition = "Mandatory reference to the service application (endpoint) that provides the eHealth activity. Can be more than one endpoint."
-* extension[publisherId] ^isModifier = false
 * url 1..
 * title 1..
 * experimental ..0
@@ -23,10 +22,10 @@ Description: "The (FHIR) ActivityDefinition (resource) describes an eHealth acti
 * publisher ..0
 * contact ..0
 * useContext ..0
-  * ^definition = "The context for the content of the eHealth activity"
-  * ^comment = "E.g. the activity is targeted to a certain age group"
+  * ^definition = "The context for the content of the eHealth activity."
+  * ^comment = "E.g. the activity is targeted to a certain age group."
 * jurisdiction ..0
-* jurisdiction ^definition = "This element is not used"
+  * ^definition = "This element is not used"
 * purpose ..0
 * usage ..0
 * copyright ..0
