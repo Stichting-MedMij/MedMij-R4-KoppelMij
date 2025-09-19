@@ -4,7 +4,7 @@ Id: MedMij-Task
 Description: "The (FHIR) Task (resource) describes an eHealth task, that is, an eHealth activity assigned to a patient."
 * insert DefaultNarrative
 * ^status = #draft
-* insert PublisherAndContact
+* insert PublisherAndContactMedMij
 * ^purpose = "KoppelMij allows a patient, from the portal or from a personal health environment (PGO), to use a module (from a third party) at the instruction of the healthcare provider (for example, to complete a questionnaire)."
 * insert Copyright
 * .
@@ -47,7 +47,7 @@ Description: "Extension added to a Task to refer to the ActivityDefinition which
 Context: Task
 * ^url = "http://vzvz.nl/fhir/StructureDefinition/instantiates"
 * ^status = #draft
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * value[x] 1..
 * value[x] only Reference(MedMij-ActivityDefinition)
   * ^short = "Reference to a MedMij ActivityDefinition"
@@ -66,7 +66,7 @@ Description: "ValueSet for Task.code"
 * ^experimental = false
 * ^date = 2024-07-15T12:00:00+02:00
 * ^experimental = false
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * include codes from system KoppeltaalTaskCode
 * include codes from system http://hl7.org/fhir/CodeSystem/task-code
 * include codes from system http://hl7.org/fhir/smart-app-launch/CodeSystem/smart-codes
@@ -79,7 +79,7 @@ Description: "Type of Task.code specifically used in Koppeltaal"
 * ^content = #complete
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/CodeSystem"
 * ^date = 2024-07-15T12:00:00+02:00
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * ^url = "http://vzvz.nl/fhir/CodeSystem/koppeltaal-task-code"
 * ^identifier.use = #official
 * ^identifier.value = "http://vzvz.nl/fhir/CodeSystem/koppeltaal-task-code"
@@ -99,7 +99,7 @@ Description: "Codes used in profiles related to SMART on FHIR."
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-04-30T19:24:31+00:00"
-* insert PublisherInternational
+* insert PublisherAndContactHL7
 * ^caseSensitive = true
 * ^description = "Codes used in profiles related to SMART on FHIR."
 * ^content = #complete

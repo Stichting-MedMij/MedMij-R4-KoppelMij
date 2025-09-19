@@ -3,7 +3,7 @@ Parent: Endpoint
 Id: MedMij-Endpoint
 Description: "The (FHIR) Endpoint (resource) is a representation of a technical contact point of an application that offers one or more eHealth services for a healthcare provider."
 * ^status = #draft
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * insert Origin
 * connectionType from $koppeltaal-endpoint-connection-type-vs (extensible)
 * managingOrganization only Reference(http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization)
@@ -24,7 +24,7 @@ Description: "Endpoint connection type ValueSet"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2023-09-26T12:00:00+02:00"
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * include codes from system KoppeltaalEndpointConnectionType
 * include codes from system $endpoint-connection-type
 
@@ -45,7 +45,7 @@ Description: "Type of endpoint connection as used in Koppeltaal"
 * ^version = "0.1"
 * ^experimental = false
 * ^date = "2023-09-26T12:00:00+02:00"
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * ^caseSensitive = true
 * ^count = 1
 * #hti-smart-on-fhir "HTI Smart on FHIR"

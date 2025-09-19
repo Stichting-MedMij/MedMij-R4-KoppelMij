@@ -3,7 +3,7 @@ Id: MedMij-ClientID
 Description: "The client ID from the ActivityDefinition extension is used as an input parameter named “audience” in the token exchange request between PGO and the DVA authorisation server."
 * ^url = "http://medmij.nl/fhir/StructureDefinition/client-id"
 * ^status = #draft
-* insert PublisherAndContact
+* insert PublisherAndContactMedMij
 * . ..1
 * . ^comment = """
 The purpose of client ID is to perform impersonation during token exchange, which results in a launch token of type: medmij:token-type:one-time-code and a smart_launch_context being stored in the DVA authorisation server for that client ID.

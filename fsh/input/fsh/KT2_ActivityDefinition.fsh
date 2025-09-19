@@ -5,7 +5,7 @@ Description: "The (FHIR) ActivityDefinition (resource) describes an eHealth acti
 * ^version = "0.9.0"
 * ^status = #draft
 * ^date = "2023-01-24"
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * . ^short = "Description of an eHealth activity"
 * . ^comment = "The (FHIR) ActivityDefinition describes an eHealth activity available to assign to a patient. The assignment of an eHealth activity to a patient creates an eHealth Task (Task resource). This task can contain sub activities as contained resources which refer to the main task using the Task.partOf element."
 * insert Origin

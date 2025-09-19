@@ -3,7 +3,7 @@ Parent: ActivityDefinition
 Id: MedMij-ActivityDefinition
 Description: "The (FHIR) ActivityDefinition (resource) describes an eHealth activity that is available for assignment to a patient. When assigning an eHealth activity to a patient, an eHealth Task is created, in which sub-activities are included as contained resources that refer to the main task via Task.partOf."
 * ^status = #draft
-* insert PublisherAndContact
+* insert PublisherAndContactMedMij
 * . ^short = "Description of an eHealth activity"
 * . ^comment = "The (FHIR) ActivityDefinition describes an eHealth activity available to assign to a patient. The assignment of an eHealth activity to a patient creates an eHealth Task (Task resource). This task can contain sub activities as contained resources which refer to the main task using the Task.partOf element."
 * insert Origin
@@ -39,7 +39,7 @@ Context: ActivityDefinition
 * ^version = "0.8.0"
 * ^status = #draft
 * ^date = "2023-01-24"
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * value[x] only Reference(MedMij-Endpoint)
 
 Extension: KT2_PublisherId
@@ -52,7 +52,7 @@ Context: ActivityDefinition
 * ^version = "0.8.0"
 * ^status = #draft
 * ^date = "2023-01-24"
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * . ..1
 * . ^comment = "This extension allows every module vendor to search for tasks with linked to their module."
 * value[x] only id
@@ -70,7 +70,7 @@ Description: "High-level categorization of the definition, used for indicating s
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-06-18T00:00:00+02:00"
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * ^immutable = true
 * include codes from system DefinitionTopic
 * include codes from system KoppeltaalDefinitionTopic
@@ -88,7 +88,7 @@ Description: "High-level categorization of the definition, used for indicating s
 * ^version = "0.9.0"
 * ^experimental = false
 * ^date = "2024-06-18T00:00:00+02:00"
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * ^caseSensitive = true
 * ^count = 2
 * #self-treatment "Zelfhulp" "The definition is related to treatment of the patient, executed by the patient."

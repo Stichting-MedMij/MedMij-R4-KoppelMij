@@ -6,6 +6,6 @@ Context: AuditEvent
 * ^version = "0.8.0"
 * ^status = #draft
 * ^date = "2023-01-24"
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * . ..1
 * value[x] only id

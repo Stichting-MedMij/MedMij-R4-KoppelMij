@@ -5,7 +5,7 @@ Description: "The (FHIR) Device (resource) is a representation of an application
 * ^version = "0.8.1"
 * ^status = #draft
 * ^date = "2023-02-07"
-* insert ContactAndPublisher
+* insert PublisherAndContactVZVZ
 * insert Origin
 * extension ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "url"

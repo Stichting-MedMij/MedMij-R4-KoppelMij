@@ -6,7 +6,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml' xml:lang='nl-NL' lang='nl-NL'>Example of a task</div>"
-* insert NLlang
+* insert LanguageNL
 * extension[+]
   * url = $task-instantiates
   * valueReference = Reference(KoppelMij-ActivityDefinition-Angststoornis-Questionnaire)
@@ -34,7 +34,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml' xml:lang='nl-NL' lang='nl-NL'>Example of an ActivityDefinition</div>"
-* insert NLlang
+* insert LanguageNL
 * extension[0]
   * url = "http://koppeltaal.nl/fhir/StructureDefinition/KT2EndpointExtension"
   * valueReference = Reference(KoppelMij-Endpoint-Vragenlijst-Angststoornis)
@@ -55,7 +55,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml' xml:lang='nl-NL' lang='nl-NL'>Example of an Endpoint as used in KoppelMij</div>"
-* insert NLlang
+* insert LanguageNL
 * status = #active
 * connectionType = $koppeltaal-endpoint-connection-type#hti-smart-on-fhir
 * managingOrganization = Reference(KoppelMij-Organization-GGZ)
